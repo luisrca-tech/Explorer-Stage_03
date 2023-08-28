@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" content="chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage 03 Projeto 01 Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="top-info-bg">
+      <div class="info-bg">
+        <h1>Crie e compartilhe seu evento.</h1>
+        <p>O primeiro passo é preencher este formulpario de inscrição.</p>
+      </div>
+    </div>
+    <main>
+      <section>
+        <div class="container-form">
+          <div class="event-info">
+            <form>
+              <fieldset>
+                <h2 id="info-lg">Informações do Evento</h2>
+                <div class="border"></div>
+                <label for="title"
+                  >Titulo do evento (mínimo 8 caracteres)
+                  <input type="text" name="title" />
+                </label>
+                <label for="link"
+                  >Link do evento (comece com https://)
+                  <input type="text" name="link" />
+                </label>
+
+                <label for="wpp"
+                  >Whatsapp para contato (somente números)
+                  <input type="number" name="wpp" />
+                </label>
+
+                <label for="more-infos"
+                  >Informações extras
+                  <textarea name="more-infos" id="more-infos"></textarea>
+                </label>
+                <label for="category"
+                  >Categoria
+                  <select
+                    name="category"
+                    id="category"
+                    aria-placeholder="Tipo do evento"
+                  >
+                    <option value="party">Party</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="soccer">Soccer</option>
+                    <option value="event type" id="event-type" selected>
+                      Tipo do evento
+                    </option>
+                  </select>
+                </label>
+              </fieldset>
+              <fieldset>
+                <legend>Privacidade</legend>
+                <div class="border"></div>
+                <label for="email"
+                  >Email do admnistrador (digite um email valido)
+                  <input type="email" name="email" >
+                </label>
+                <label for="password"
+                  >Senha de acesso para os participantes (minimo 8 caracteres)
+                  <input type="password" name="password" >
+                </label>
+                <img src="./imgs/Checkbox (1).png" alt="Checkbox" />
+              </fieldset>
+              <fieldset>
+                <legend>Dia e Hora</legend>
+                <div class="date-container">
+                  <label for="date"
+                    >Data
+                    <input type="date" name="date" />
+                  </label>
+                  <label for="das"
+                    >Das
+                    <input type="number" name="das" placeholder="19:00" />
+                  </label>
+                  <label for="ate"
+                    >até
+                    <input type="number" name="ate" placeholder="20:00" />
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+            <footer>
+              <form>
+                <label for="submit">
+                  <input type="submit" value="Salvar evento" />
+                </label>
+              </form>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

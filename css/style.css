@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+.top-info-bg {
+    height: 368px;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: #121214;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-bg h1,
+.info-bg p {
+    margin-top: 24px;
+}
+
+.info-bg h1 {
+    margin: 80px 0 0 352px;
+    color: #ffffff;
+    width: 319px;
+    font-size: 39px;
+}
+
+
+.info-bg p {
+    margin-left: 352px;
+    color: #42D3FF;
+    width: 283px;
+    font-size: 16px;
+}
+
+.container-form {
+    max-width: 736px;
+    height: 1400px;
+    background-color: #FAFAFC;;
+    margin-left: 351px;
+    margin-top: -86px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+    flex-direction: column;
+    display: flex;
+    padding: 64px;
+    gap: 48px;
+    max-width: 1300px;
+    width: 100%;
+}
+
+form>fieldset {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    max-width: 100%;
+    width: 100%;
+}
+
+form>fieldset>label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #4E4958;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px
+}
+
+ form>fieldset>label input {
+    width: 100%;
+    height: 56px;
+}
+
+form>fieldset>label textarea {
+    width: 100%;
+    height: 168px;
+}
+
+hr {
+    width: 100%;
+}
+
+label>select {
+    height: 56px;
+    width: 100%;
+}
+
+
+fieldset>legend {
+    font-family: Archivo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+
+fieldset .date-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.date-container input[type="date"] {
+    width: 100%;
+    height: 56px;
+}
+
+.date-container input[type="number"] {
+    width: 100%;
+    height: 56px;
+}
+
+.border {
+    border: 2px solid #E6E6F0;
+}
+
+footer {
+    background-color: #F0F0F4;
+    height: 136px;
+    width: 736px;
+    padding: 64px;
+    display: block;
+}
+
+footer input[type="submit"] {
+    color: #FFF;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    border: none;
+    background-color: #04D361;
+    cursor: pointer;
+}
+
+footer>form {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: #04D361;
+    border-radius: 8px;
+    cursor: pointer;
+
+    
+}
+
+/* Responsivo */
+@media(max-width: 768px) {
+
+body {
+    background-color: #D9D9D9;
+}
+
+.top-info-bg {
+    width: 100%;
+}
+
+.info-bg h1,
+.info-bg p {
+    margin-top: 24px;
+}
+
+.info-bg h1 {
+    margin: 20px 0 0 20px;
+    font-size: 30px;
+}
+
+
+.info-bg p {
+    margin: 20px 0 0 20px;
+    font-size: 14px;
+}
+
+.container-form {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    
+}
+
+
+form {
+    width: 100%;
+}
+
+form>fieldset {
+    max-width: 100%;
+    width: 100%;
+}
+
+form>fieldset>label{
+    width: 100%;
+}
+
+ form>fieldset>label input {
+    width: 100%;
+    padding: 10px;
+}
+
+form>fieldset>label textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+label>select {
+    width: 100%;
+}
+
+.date-container input[type="date"] {
+    width: 100%;
+}
+
+
+
+.date-container input[type="number"] {
+    width: 100%;
+}
+
+.border {
+    border: 2px solid #E6E6F0;
+    width: 100%;
+}
+
+footer { 
+    width: 100%;
+}
+
+footer>form {
+    width: 100%;
+}   
+}
